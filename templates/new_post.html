@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- <a href = "/blog">Main blog page</a>  -->
+    <br>
+    <h1 class="main_page_title"> Add a new entry</h1>
+    <br>
+    <br>
+    <br>
+    <form method='POST' action='/blog'>
+        <label><p>Title for your new blog:</p>
+            <input type="text" name='new_post_title'/>
+        </label>
+        <br/>
+        <span>{{title_error}}</span>
+        
+        <label><p>Your new blog:</p>
+            <textarea id="post_input" name='new_post_body'></textarea>
+        </label>
+        <br/>
+        <span>{{body_error}}</span>
+        <br/>
+        <br/>
+        <input type="submit" value='Add Entry' />
+    </form>
+
+{% endblock %}
