@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <!-- {% if blogs|length != 0 %} -->
-    <h1> Build a Blog </h1> <!-- class="main_page_title" -->
+    <h1 class="main_page_title"> Build a Blog </h1>
     <ul>
         {% for blog in blogs %}
             <li><a class='link' href="/blog?id={{ blog.id }}">{{ blog.title }}</a></li>
@@ -9,5 +8,4 @@
             <hr>
         {% endfor %}
     </ul>
-    <!-- {% endif %} -->
 {% endblock %}

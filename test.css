@@ -1,0 +1,31 @@
+span{
+    color: red;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+.main_page_title{
+    text-align: center;
+}
+#post_input {
+    width: 300px;
+    height: 120px;
+}
+/* unvisited link */
+.link {
+    color: green;
+}
+/* visited link */
+a:visited {
+    color: purple;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
