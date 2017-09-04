@@ -2,7 +2,8 @@
 <html>
     <head>
         <title class="main_page_title">{{base_title}}</title>
-        <link rel = "stylesheet" type = "text/css" href = "./test.css" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='test.css') }}"/>
+        
     </head>
     <body>
         <a class='link' href="/blog">Main Blog</a> 
